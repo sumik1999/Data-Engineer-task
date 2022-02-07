@@ -4,4 +4,4 @@ openpyxl
 pdf2image
 pytesseract
 pillow
-optparse
+optparse-pretty
