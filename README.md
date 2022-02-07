@@ -58,7 +58,8 @@
 ` sudo apt-get install tesseract-ocr-mar`
 3. To install the requirements run
  `pip install -r requirements.txt`
-4. Run `python wiki_extractor.py --keyword=<your query string> --num_urls=<number of urls to scrape> --output=<Name of output file>`
-5. Run `python pdf_extractor.py` to get the pdf_Extract.json
+4. Run `cd wiki-pdf-extraction/`
+5. Run `python wiki_extractor.py --keyword=<your query string> --num_urls=<number of urls to scrape> --output=<Name of output file>`
+6. Run `python pdf_extractor.py` to get the pdf_Extract.json
    
    
