@@ -1,10 +1,7 @@
-pandas
-xlrd
 requests
 bs4
 openpyxl
-easyocr
 pdf2image
 pytesseract
-opencv-python
 pillow
+optparse
