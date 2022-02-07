@@ -49,7 +49,7 @@ def main():
     (options, args) = parser.parse_args()
 
     if not options:
-        print (parser)
+        print ("Please provide options!")
         exit(0)
     else:
         keyword = options.keyword
