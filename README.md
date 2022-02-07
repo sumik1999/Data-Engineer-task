@@ -28,6 +28,7 @@
 2. Then from *main*, I'm calling the *pdf_extract_already_link* for every known pdf link:
    - It takes the url, as both page and pdf url are same, stores them in a dictionary
    - I have received the response content by sending a request on the pdf url and written the content of it to the file using **write_bytes**
+   - the pdf file gets created on fly 
    - I have then called the *convert_pdf* function to convert the data of each pdf
 3. In the *convert_pdf* function, the pdf filepath is taken:
    - Using **[pdf2image](https://pdf2image.readthedocs.io/en/latest/)** module,each pdf is split into images 
@@ -48,5 +49,16 @@
    
 6. From *main* function, results from both kind of links are added and stored into the json file *pdf_extract.json*
 #### Due to large file size, I have uploaded only a sample of the pdf_extractor in *pdf_extract_sample.json*
+
+
+#### For replicating these results:
+1. Clone this repo using `git clone https://github.com/sumik1999/wiki-pdf-extraction.git`
+2. You must have tesseract and marathi language's data installed on your system. To do so in ubuntu run
+ ` sudo apt-get install tesseract-ocr` and then to install marathi run
+` sudo apt-get install tesseract-ocr-mar`
+3. To install the requirements run
+ `pip install -r requirements.txt`
+4. Run `python wiki_extractor.py --keyword=<your query string> --num_urls=<number of urls to scrape> --output=<Name of output file>`
+5. Run `python pdf_extractor.py` to get the pdf_Extract.json
    
    
